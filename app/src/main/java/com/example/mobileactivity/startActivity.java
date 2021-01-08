@@ -8,13 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class startActivity extends AppCompatActivity implements View.OnClickListener{
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_start);
 
         Button btnsignin = (Button) findViewById(R.id.btnsignin);
         btnsignin.setOnClickListener(this);
@@ -31,14 +31,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnsignin:
-                Intent screen2 = new Intent(this, MainActivity2.class);
+                Intent screen2 = new Intent(this, signinActivity.class);
                 startActivity(screen2);
                 break;
             case R.id.btnregister:
                 Toast.makeText(this, "Not Yet Available", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnforgot:
-                Toast.makeText(this, "Not Yet Available", Toast.LENGTH_SHORT).show();
+                Intent screen5 = new Intent(this, forgotActivity.class);
+                startActivity(screen5);
                 break;
         }
 

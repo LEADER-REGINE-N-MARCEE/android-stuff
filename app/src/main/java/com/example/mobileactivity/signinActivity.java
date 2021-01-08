@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity2 extends AppCompatActivity implements View.OnClickListener{
+public class signinActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText textaccountnumber;
     EditText textpassword;
@@ -18,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_signin);
 
         textaccountnumber = (EditText) findViewById(R.id.textaccountnumber);
         textpassword = (EditText) findViewById(R.id.textpassword);
@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         if (textaccountnumber.getText().toString().equals("123456") && textpassword.getText().toString().equals("password")) {
             Toast.makeText(this, "Login Succesful", Toast.LENGTH_SHORT).show();
-            Intent screen3 = new Intent(this, MainActivity3.class);
+            Intent screen3 = new Intent(this, dashboardActivity.class);
             startActivity(screen3);
         }
        else {
