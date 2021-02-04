@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutnote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00676767"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="313dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/roundshape"
+        android:orientation="vertical"
+        app:layout_constraintCircleRadius="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleH1"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_9sdp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="21sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/subH1"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_9sdp"
+            android:text="Subtitle"
+            android:textColor="#000000"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/descH1"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_9sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="14sp">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dateH1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingRight="@dimen/_9sdp"
+            android:text="Date and Time"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="11sp">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
